@@ -22,7 +22,9 @@ function writePassword() {
 }
 function generatePassword() {
   var length = prompt("How long would you like your password to be?");
-  
+  if (length < 8 || length > 128) {
+    alert ("please choose a number between 8 and 128!")
+  }
   var qSymbols = confirm("Would you like symbols included?");
   var qUpper = confirm("would you like Uppercase Characters?");
   var qLower = confirm("Would you like lowercase letters included?");
@@ -49,5 +51,6 @@ function generatePassword() {
   }
   return keep 
 }
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
