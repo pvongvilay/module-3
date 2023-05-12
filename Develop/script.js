@@ -22,6 +22,7 @@ function writePassword() {
 }
 function generatePassword() {
   var length = prompt("How long would you like your password to be?");
+  
   var qSymbols = confirm("Would you like symbols included?");
   var qUpper = confirm("would you like Uppercase Characters?");
   var qLower = confirm("Would you like lowercase letters included?");
